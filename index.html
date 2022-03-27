@@ -1,23 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/flexboxgrid.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="css/main.min.css" />
-  </head>
+</head>
 
-  <body>
+<body>
+    <section class="hero">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/mebelyuklash.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item ">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/home-cleaning-1627892301.jpg?crop=0.788xw:0.591xh;0.202xw,0.401xh&resize=1200:*" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/mebel2.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="hero__manzildiv">
+            <p class="hero__manzil">Chilonzor I kvartal <br> #2 uy 99 honadon </p>
+            <a class="hero__call" href="tel: +998 90 994 95 92"><i class='bx bxs-phone'></i>+998 90 994 9592</a>
+        </div>
+        <!-- ---------------------------------------social-icon------------------------------------         -->
+        <div class="hero__socials">
+            <a class="hero__socials-item" target="_blank" href="https://t.me/PERSONAL24_takliflari"><i class='bx bxl-telegram'
+          style='color:#fff'></i></a>
+            <a class="hero__socials-item" target="_blank" href=""><i class='bx bxl-instagram-alt'
+          style='color:#efefef'></i></a>
+            <a class="hero__socials-item" target="_blank" href=""><i class='bx bxl-facebook' style='color:#ffffff'></i></a>
+            <a class="hero__socials-item" target="_blank" href=""><i class='bx bxl-twitter' style='color:#ffffff'></i></i>
+        <a class="hero__socials-item" target="_blank"
+          href="#"><i
+            class='bx bxs-location-plus' style='color:#ffffff'></i></i>
+        </a>
+        </div>
+
+        <div class="hero__navbar">
+            <h2 class="hero__title"><span>PERSONAL <span class="hero__span">24</span></span> kunlik Xizmatlar</h2>
+
+            <ul class="hero__list ">
+                <li class="hero__item"><a href="#hero">Bosh sahifa</a></li>
+                <li class="hero__item"><a href="#about">Biz haqimizda</a></li>
+                <li class="hero__item"><a href="#">Xizmatlar</a></li>
+                <li class="hero__item"><a href="#">Murojaat</a></li>
+            </ul>
+            <button class="btn btn-primary hero__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class='bx bx-menu-alt-right'></i></button>
+        </div>
+
+        <!-- ---------------------menu-right-responsive------------------------------- -->
+
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvasRightLabel" id="offcanvasRightLabel">Personal24 <br> Xizmatlar markazi</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="hero__list menubar">
+                    <li class="hero__item"><a href="#hero">Bosh sahifa</a></li>
+                    <li class="hero__item"><a href="#about">Biz haqimizda</a></li>
+                    <li class="hero__item"><a href="#">Xizmatlar</a></li>
+                    <li class="hero__item"><a href="#">Murojaat</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ---------------------------------------menu-right-end------------------------------------ -->
+        <p class="hero__copyright">COPYRIGHT:
+            <box-icon name='copyright'></box-icon> PERSONAL24.UZ 2022</p>
+    </section>
+
+
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>
