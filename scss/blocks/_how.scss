@@ -1,0 +1,32 @@
+.how {
+    width: 100vw;
+    height: 100%;
+    background-image: url('http://webdesign-finder.com/ecoclean-v2/wp-content/uploads/2021/06/about-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.how__main {
+    padding: 50px;
+}
+
+.how__desc {
+    padding: 100px 10px;
+}
+
+.how__we-work {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(192, 191, 191);
+    margin: 0;
+}
+
+.how__title {
+    width: 100%;
+    font-family: $font-quicksand;
+    font-weight: 400;
+    span {
+        font-weight: 700;
+    }
+}

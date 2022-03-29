@@ -1,0 +1,41 @@
+.about {}
+
+.about__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about__types {
+    display: flex;
+    padding: 50px 0;
+}
+
+.type__list {
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.type__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 10px;
+    align-items: center;
+    img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%
+    }
+    ;
+}
+
+@media screen and (max-width: 576px) {
+    .about__types {
+        display: flex;
+        flex-direction: column;
+    }
+}

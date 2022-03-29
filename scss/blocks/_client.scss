@@ -1,0 +1,41 @@
+.clients {
+    padding: 50px 0;
+    background-color: rgb(119, 180, 111);
+}
+
+.clients__main {
+    text-align: center;
+    .how__title {
+        margin-bottom: 40px;
+        color: #fff;
+    }
+}
+
+.clients__text {
+    font-family: $font-quicksand;
+    font-weight: 700;
+    width: 750px;
+    margin: 0 auto;
+}
+
+.clients__people {
+    gap: 20px;
+    .people__item {
+        margin-top: 40px;
+    }
+}
+
+.people__about {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid rgb(165, 160, 160);
+    margin-bottom: 30px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    p {
+        width: 100%;
+    }
+}

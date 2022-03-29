@@ -18,7 +18,7 @@
         max-width: 100vw;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.274);
+        background-color: rgba(247, 241, 241, 0.247);
         background-size: cover;
         background-position: center;
         z-index: 99;
@@ -29,12 +29,12 @@
 }
 
 .carousel-control-prev-icon {
-    width: 5rem !important;
+    width: 3rem !important;
     height: 7rem !important;
 }
 
 .carousel-control-next-icon {
-    width: 5rem !important;
+    width: 3rem !important;
     height: 5rem !important;
 }
 
@@ -49,8 +49,8 @@
     position: absolute;
     font-family: $font-oswald;
     color: #fff;
-    text-shadow: -1px -1px 0px rgba(150, 147, 150, 1);
     p {
+        text-shadow: -1px -1px 0px rgba(150, 147, 150, 1);
         cursor: default;
         position: relative;
         left: 150px;
@@ -61,8 +61,33 @@
         color: #fff;
         transition: all ease 0.5s;
         font-size: 45px;
+        animation: ochibYon 4s infinite 1s linear;
+        text-shadow: -1px -1px 0px rgb(253, 253, 253);
+        @keyframes ochibYon {
+            // 0% {
+            //     color: #ffffff;
+            //     text-shadow: -1px -1px 0px rgb(253, 253, 253);
+            // }
+            0% {
+                color: #0771aa;
+                text-shadow: -1px -1px 0px rgb(253, 253, 253);
+            }
+            50% {
+                color: rgb(43, 6, 146);
+                text-shadow: -1px -1px 5px rgb(253, 253, 253);
+            }
+            80% {
+                color: #4e14aa;
+                text-shadow: -1px -1px 1px rgb(253, 253, 253);
+            }
+            100% {
+                color: #0771aa;
+                text-shadow: -1px -1px 1px rgb(253, 253, 253);
+            }
+        }
         &:hover {
-            color: rgb(228, 84, 84);
+            color: #0182CA;
+            text-shadow: -1px -1px 0px rgb(253, 253, 253);
         }
     }
 }
@@ -150,14 +175,15 @@
         list-style-type: none;
         .hero__item {
             text-decoration: none;
-            font-size: 30px;
+            font-size: 25px;
             margin-right: 40px;
             a {
-                color: $color-primary;
+                color: rgb(141, 139, 139);
                 text-decoration: none;
-                transition: all ease 0.5s;
+                transition: all ease 0.3s;
+                text-shadow: 0px 1px 1px rgba(150, 147, 150, 1);
                 &:hover {
-                    color: rgb(240, 134, 36);
+                    color: $color-primary;
                 }
             }
         }
@@ -165,6 +191,7 @@
 }
 
 .hero__title {
+    font-family: $font-quicksand;
     text-transform: uppercase;
 }
 
@@ -193,6 +220,7 @@
     .hero__manzildiv {
         text-align: center;
         top: 100px;
+        justify-content: center;
         p {
             left: 0;
         }
@@ -220,5 +248,46 @@
             cursor: default;
             color: #fff;
         }
+    }
+    .carousel-item {
+        img {
+            margin-top: 50px;
+            background-position: center;
+            background-size: cover;
+            height: 80vh;
+        }
+    }
+    .hero__socials {
+        left: 90px;
+    }
+}
+
+.bizhaqimizda {
+    &:hover {
+        .hero__hover {
+            display: block;
+        }
+    }
+}
+
+.hero__hover {
+    top: -360px;
+    transform: translateX(-50px);
+    position: absolute;
+    display: none;
+    padding: 30px;
+    background-color: transparent;
+    .hero__Hover-links {
+        text-decoration: none;
+        border-radius: 10px;
+        color: #000;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 20px;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
 }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/flexboxgrid.min.css" />
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="css/main.min.css" />
@@ -61,8 +62,21 @@
 
             <ul class="hero__list ">
                 <li class="hero__item"><a href="#hero">Bosh sahifa</a></li>
-                <li class="hero__item"><a href="#about">Biz haqimizda</a></li>
-                <li class="hero__item"><a href="#">Xizmatlar</a></li>
+                <li class="hero__item bizhaqimizda"><a href="#about">Biz haqimizda</a>
+
+                    <div class="hero__hover">
+                        <div class="hero__Hover-links">
+                            <a href="#how">Biz qanday ishlaymiz?</a>
+                            <a href="#about">Tozalik xizmati</a>
+                            <a href="#status">status</a>
+                            <a href="#xizmatlar">Bizning xizmatlar</a>
+                            <a href="#about">Biz haqimizda</a>
+                            <a href="#murojat">Aloqa</a>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="hero__item"><a href="#xizmatlar">Xizmatlar</a></li>
                 <li class="hero__item"><a href="#">Murojaat</a></li>
             </ul>
             <button class="btn btn-primary hero__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class='bx bx-menu-alt-right'></i></button>
@@ -80,8 +94,8 @@
                 <ul class="hero__list menubar">
                     <li class="hero__item"><a href="#hero">Bosh sahifa</a></li>
                     <li class="hero__item"><a href="#about">Biz haqimizda</a></li>
-                    <li class="hero__item"><a href="#">Xizmatlar</a></li>
-                    <li class="hero__item"><a href="#">Murojaat</a></li>
+                    <li class="hero__item"><a href="#xizmatlar">Xizmatlar</a></li>
+                    <li class="hero__item"><a href="#murojat">Murojaat</a></li>
                 </ul>
             </div>
         </div>
@@ -92,6 +106,218 @@
     </section>
 
 
+    <section class="how" id="how">
+        <div class="container">
+            <div class="how__main d-flex">
+                <div class="how__space col-xl-6">
+
+                </div>
+                <div class="how__desc col-6  col-xs-12">
+                    <p class="how__we-work">Biz qanday ishlaymiz?</p>
+                    <h2 class="how__title">Bizning barcha mutaxasistlar to'la qonli <br> <span> tajribaga va tayyorgarlikka</span> ega.</h2>
+                    <p>O'zbekistondagi yagona to'la imkoniyatlarga ega va barcha yo'nalishlardagi xizmatlarni o'z ichiga olgan yangi loyihani qarshilab turibsiz yani...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__main">
+                <p class="how__we-work">Siz afzal ko'rgan tozalik xizmati</p>
+                <h2 class="how__title">Yuqori sifatli tozalash xizmatlarini taklif qiladi</h2>
+                <h4 class="about__hamyonbop">Hamyonbop narxlarda</h4>
+                <div class="about__types type">
+                    <ul class="type__list">
+                        <li class="type__item">
+                            <img src="images/tozalash/service-window-1.png" alt="tozalash">
+                            <h5>Oyna <br> tozalash</h5>
+                            <i class='bx bx-log-in-circle'></i>
+                        </li>
+                        <li class="type__item">
+                            <img src="images/tozalash/service-tozalsh-2.png" alt="tozalash">
+                            <h5>Yengil<br>tozalash</h5>
+                            <i class='bx bx-log-in-circle'></i>
+                        </li>
+                        <li class="type__item">
+                            <img src="images/tozalash/hammom-tozalash.jpg" alt="tozalash">
+                            <h5>Hammom<br>tozalash</h5>
+                            <i class='bx bx-log-in-circle'></i>
+                        </li>
+                    </ul>
+                    <div class="type__main">
+                        <img src="images/tozalash/supurgi.png" alt="">
+                    </div>
+                    <ul class="type__list">
+                        <li class="type__item">
+                            <img src="images/tozalash/service-offis.png" alt="tozalash">
+                            <h5>Offis<br> tozalash</h5>
+                            <i class='bx bx-log-in-circle'></i>
+                        </li>
+                        <li class="type__item">
+                            <img src="images/tozalash/hojatxona tozalash.jpg" alt="tozalash">
+                            <h5>Glavniy<br> tozalash</h5>
+                            <i class='bx bx-log-in-circle'></i>
+                        </li>
+                        <li class="type__item">
+                            <img src="images/tozalash/changlarni-artish.jpg" alt="tozalash">
+                            <h5>Nam va qurug'<br> tozalash</h5>
+                            <i class='bx bx-log-in-circle'></i>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="clients">
+        <div class="container">
+            <div class="clients__main">
+                <p class="how__we-work">Bizning mijozlar</p>
+                <h2 class="how__title">Ular biz haqimizda nima deyishadi?</h2>
+                <p class="clients__text">Biz har bir mijozimizning talab va taklif va har bir shikoyatlarini inobatga olgan holda ish yuritamiz, ishimiz sifatini baholashni doim ulardan so'rab qolamiz. quyida mijozlarimizning bazilaridan bildirilgan maqtov va tashakkurlarini
+                    keltirib o'tmoqchimiz.
+                </p>
+
+                <div class="clients__people people d-flex">
+                    <div class="people__item column col-4">
+                        <div class="people__about">
+                            <p>"Ishchilariz juda yaxshi ish qilishdi sizlargayam katta raxmat. yana xizmat bolsa chaqiraman. "</p>
+                        </div>
+                        <div class="column">
+                            <img src="images/man.png" alt="">
+                            <p>Ravshan Jo'rayev</p>
+                        </div>
+                    </div>
+                    <div class="people__item column col-4">
+                        <div class="people__about">
+                            <p>"Barakalla zo'r hizmatni yo'lga qoyibsizlar bizga ishchi kerak bo'lganda sira topolmayapkan edik. "</p>
+                        </div>
+                        <div class="column">
+                            <img src="images/man2.png" alt="">
+                            <p>Ruslan Chegov</p>
+                        </div>
+
+                    </div>
+                    <div class="people__item column col-4">
+                        <div class="people__about">
+                            <p>"Ayol xizmatchilaringiz yaxshi mehnat qilishdi ularga qo'shimcha haq to'ladim sifatl isihlari uchun sizlarga ham arxmat"</p>
+                        </div>
+                        <div class="column">
+                            <img src="images/woman.png" alt="">
+                            <p>Dildora Hamitova</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="service" id="xizmatlar">
+        <div class="container">
+            <h2 class="service__title"><span>Personal24</span><br> quyidagi xizmatlardan <br> foydalanishingiz mumkin</h2>
+            <ul class="service__list d-flex">
+                <li class="service__item col-xs-6 col-md-4">
+
+                    <img src="images/yuktasish-xizmati.jpg" alt="yuklash">
+                    <div class="service__desc">
+                        <h4>Yuk tashish xizmati</h4>
+                        <p>Yuklarni yuklash va tushirish</p>
+                    </div>
+                    <a class="more-info" href="#">Ko'proq Malumot <i class='bx bxs-chevrons-right'></i></a>
+
+                </li>
+                <li class="service__item col-xs-6 col-md-4">
+
+                    <img src="images/Yukmashina.png" alt="yuklash">
+                    <div class="service__desc">
+                        <h4>Isuzu va boshqa yuk mashinalar xizmati </h4>
+                    </div>
+                    <a class="more-info" href="#">Ko'proq Malumot <i class='bx bxs-chevrons-right'></i></a>
+
+                </li>
+                <li class="service__item col-xs-6 col-md-4">
+
+                    <img src="images/yerchopish.jpg" alt="yuklash">
+                    <div class="service__desc">
+                        <h4>Yer ag'darish va ishlov berish</h4>
+                    </div>
+                    <a class="more-info" href="#">Ko'proq Malumot <i class='bx bxs-chevrons-right'></i></a>
+
+                </li>
+
+
+                <li class="service__item col-xs-6 col-md-4">
+
+                    <img src="images/clenaing.jpg" alt="yuklash">
+                    <div class="service__desc">
+                        <h4>Office va uylarni tozalash</h4>
+                    </div>
+                    <a class="more-info" href="#">Ko'proq Malumot <i class='bx bxs-chevrons-right'></i></a>
+
+                </li>
+                <li class="service__item col-xs-6 col-md-4">
+
+                    <img src="images/gishtterish.jpg" alt="yuklash">
+                    <div class="service__desc">
+                        <h4>G'isht terish</h4>
+
+                    </div>
+                    <a class="more-info" href="#">Ko'proq Malumot <i class='bx bxs-chevrons-right'></i></a>
+
+                </li>
+                <li class="service__item col-xs-6 col-md-4">
+
+                    <img src="https://st31.stpulscen.ru/images/product/208/527/655_big.jpg" alt="yuklash">
+                    <div class="service__desc">
+                        <h4>Reshotka o'rnatish</h4>
+                    </div>
+                    <a class="more-info" href="#">Ko'proq Malumot <i class='bx bxs-chevrons-right'></i></a>
+
+                </li>
+
+                <li class="service__item col-xs-6 col-md-4">
+
+                    <img src="https://preview.redd.it/btt5lz99e4v01.png?width=640&crop=smart&auto=webp&s=66a29379cc32cb6208585342df830d7e30efc854" alt="yuklash">
+                    <div class="service__desc">
+                        <h4>O'ra qazish</h4>
+
+                    </div>
+                    <a class="more-info" href="#">Ko'proq Malumot <i class='bx bxs-chevrons-right'></i></a>
+
+                </li>
+                <li class="service__item col-xs-6 col-md-4">
+
+                    <img src="images/gazon.jpg" alt="yuklash">
+                    <div class="service__desc">
+                        <h4>Gazon ekish</h4>
+                    </div>
+                    <a class="more-info" href="#">Ko'proq Malumot <i class='bx bxs-chevrons-right'></i></a>
+
+                </li>
+                <li class="service__item col-xs-6 col-md-4">
+
+                    <img src="images/shkaf.jpg" alt="yuklash">
+                    <div class="service__desc">
+                        <h4>Shkaf va mebellarni sochish & yig'ish</h4>
+                    </div>
+                    <a class="more-info" href="#">Ko'proq Malumot <i class='bx bxs-chevrons-right'></i></a>
+
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <a href="" class="btn-shine" target="_blank">Personal 24 ga murojat qiling </a>
+            </div>
+        </div>
+    </section>
     <script src="js/main.js"></script>
 </body>
 
