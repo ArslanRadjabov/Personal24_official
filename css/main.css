@@ -297,6 +297,7 @@ img {
     left: 0;
     z-index: 999;
     height: 50px;
+    padding: 20px 0;
   }
   .hero__navbar .hero__list {
     display: none;
