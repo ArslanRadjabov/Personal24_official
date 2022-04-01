@@ -206,14 +206,14 @@
         left: 0;
         z-index: 999;
         height: 50px;
-        padding: 20px 0;
+        padding: 20px 10px;
         .hero__list {
             display: none;
         }
     }
     .hero__socials {
         top: 80%;
-        left: 25%;
+        left: 130px;
     }
     .hero__btn {
         display: block;
@@ -257,9 +257,6 @@
             background-size: cover;
             height: 80vh;
         }
-    }
-    .hero__socials {
-        left: 90px;
     }
 }
 
