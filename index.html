@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/main.min.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -31,12 +31,12 @@
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
         </div>
         <div class="hero__manzildiv">
@@ -44,21 +44,11 @@
             <a class="hero__call" href="tel: +998 90 994 95 92"><i class='bx bxs-phone'></i>+998 90 994 9592</a>
         </div>
         <!-- ---------------------------------------social-icon------------------------------------         -->
-        <div class="hero__socials">
-            <a class="hero__socials-item" target="_blank" href="https://t.me/PERSONAL24_takliflari"><i class='bx bxl-telegram'
-          style='color:#fff'></i></a>
-            <a class="hero__socials-item" target="_blank" href=""><i class='bx bxl-instagram-alt'
-          style='color:#efefef'></i></a>
-            <a class="hero__socials-item" target="_blank" href=""><i class='bx bxl-facebook' style='color:#ffffff'></i></a>
-            <a class="hero__socials-item" target="_blank" href=""><i class='bx bxl-twitter' style='color:#ffffff'></i></i>
-        <a class="hero__socials-item" target="_blank"
-          href="#"><i
-            class='bx bxs-location-plus' style='color:#ffffff'></i></i>
-        </a>
-        </div>
+
 
         <div class="hero__navbar">
-            <h2 class="hero__title"><span>PERSONAL <span class="hero__span">24</span></span> kunlik Xizmatlar</h2>
+            <h2 class="hero__title"><span class="logo__personal">PERSONAL <span class="hero__span">24</span></span>
+                kunlik Xizmatlar markazi</h2>
 
             <ul class="hero__list ">
                 <li class="hero__item"><a href="#hero">Bosh sahifa</a></li>
@@ -79,7 +69,8 @@
                 <li class="hero__item"><a href="#xizmatlar">Xizmatlar</a></li>
                 <li class="hero__item"><a href="#">Murojaat</a></li>
             </ul>
-            <button class="btn btn-primary hero__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class='bx bx-menu-alt-right'></i></button>
+            <button class="btn btn-primary hero__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                    class='bx bx-menu-alt-right'></i></button>
         </div>
 
         <!-- ---------------------menu-right-responsive------------------------------- -->
@@ -87,8 +78,9 @@
 
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvasRightLabel" id="offcanvasRightLabel">Personal24 <br> Xizmatlar markazi</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <h5 class="offcanvasRightLabel" id="offcanvasRightLabel">Personal24</h5>
+                <button type="button" class="text-reset btn-exit" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                        class='bx bx-exit' style='color:#fdfafa'></i></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="hero__list menubar">
@@ -104,6 +96,19 @@
         <p class="hero__copyright">COPYRIGHT:
             <box-icon name='copyright'></box-icon> PERSONAL24.UZ 2022</p>
     </section>
+    <div class="hero__socials">
+        <a class="hero__socials-item" target="_blank" href="https://t.me/PERSONAL24_takliflari"><i
+                class='bx bxl-telegram' style='color:#fff'></i></a>
+        <a class="hero__socials-item" target="_blank" href=""><i class='bx bxl-instagram-alt'
+                style='color:#efefef'></i></a>
+        <a class="hero__socials-item" target="_blank" href=""><i class='bx bxl-facebook'
+                style='color:#ffffff'></i></a>
+        <a class="hero__socials-item" target="_blank" href=""><i class='bx bxl-twitter'
+                style='color:#ffffff'></i></i>
+            <a class="hero__socials-item" target="_blank" href="#"><i class='bx bxs-location-plus'
+                    style='color:#ffffff'></i></i>
+            </a>
+    </div>
 
 
     <section class="how" id="how">
@@ -114,7 +119,8 @@
                 </div>
                 <div class="how__desc col-md-6  col-xs-12">
                     <p class="how__we-work">Biz qanday ishlaymiz?</p>
-                    <h2 class="how__title">Bizning barcha mutaxasistlar to'la qonli <br> <span> tajribaga va tayyorgarlikka</span> ega.</h2>
+                    <h2 class="how__title">Bizning barcha mutaxasistlar to'la qonli <br> <span> tajribaga va
+                            tayyorgarlikka</span> ega.</h2>
                     <p>O'zbekistondagi yagona to'la imkoniyatlarga ega va barcha yo'nalishlardagi xizmatlarni o'z ichiga olgan yangi loyihani qarshilab turibsiz yani...</p>
                 </div>
             </div>
@@ -174,14 +180,14 @@
     <section class="clients">
         <div class="container">
             <div class="clients__main">
-                <p class="how__we-work">Bizning mijozlar</p>
-                <h2 class="how__title">Ular biz haqimizda nima deyishadi?</h2>
+                <p class="clients__how how__we-work">Bizning mijozlar</p>
+                <h2 class="clients__title how__title">Ular biz haqimizda nima deyishadi?</h2>
                 <p class="clients__text">Biz har bir mijozimizning talab va taklif va har bir shikoyatlarini inobatga olgan holda ish yuritamiz, ishimiz sifatini baholashni doim ulardan so'rab qolamiz. quyida mijozlarimizning bazilaridan bildirilgan maqtov va tashakkurlarini
                     keltirib o'tmoqchimiz.
                 </p>
 
-                <div class="clients__people people d-flex">
-                    <div class="people__item column col-4">
+                <div class="clients__people people">
+                    <div class="people__item column col-md-4 col-xs-12">
                         <div class="people__about">
                             <p>"Ishchilariz juda yaxshi ish qilishdi sizlargayam katta raxmat. yana xizmat bolsa chaqiraman. "</p>
                         </div>
@@ -190,7 +196,7 @@
                             <p>Ravshan Jo'rayev</p>
                         </div>
                     </div>
-                    <div class="people__item column col-4">
+                    <div class="people__item column col-md-4 col-xs-12">
                         <div class="people__about">
                             <p>"Barakalla zo'r hizmatni yo'lga qoyibsizlar bizga ishchi kerak bo'lganda sira topolmayapkan edik. "</p>
                         </div>
@@ -200,7 +206,7 @@
                         </div>
 
                     </div>
-                    <div class="people__item column col-4">
+                    <div class="people__item column col-md-4 col-xs-12">
                         <div class="people__about">
                             <p>"Ayol xizmatchilaringiz yaxshi mehnat qilishdi ularga qo'shimcha haq to'ladim sifatl isihlari uchun sizlarga ham arxmat"</p>
                         </div>
@@ -218,7 +224,8 @@
 
     <section class="service" id="xizmatlar">
         <div class="container">
-            <h2 class="service__title"><span>Personal24</span><br> quyidagi xizmatlardan <br> foydalanishingiz mumkin</h2>
+            <h2 class="service__title"><span>Personal24</span><br> quyidagi xizmatlardan <br> foydalanishingiz mumkin
+            </h2>
             <ul class="service__list d-flex">
                 <li class="service__item col-xs-6 col-md-4">
 
@@ -318,6 +325,44 @@
             </div>
         </div>
     </section>
+
+
+
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+        ScrollReveal().reveal('.hero__manzil', {
+            delay: 200,
+            origin: 'right'
+        });
+        ScrollReveal().reveal('.clients__text ', {
+            delay: 500,
+            origin: 'top'
+        });
+
+        ScrollReveal().reveal('.hero__navbar', {
+            delay: 500,
+            origin: 'bottom'
+        });
+        ScrollReveal().reveal('.how__desc', {
+            delay: 500,
+            origin: 'bottom'
+        });
+        ScrollReveal().reveal('.clients__text', {
+            delay: 500,
+            origin: 'left'
+        });
+    </script>
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <script src="js/main.js"></script>
