@@ -81,7 +81,7 @@ img {
   max-width: 100vw;
   width: 100%;
   height: 100vh;
-  background-color: rgba(247, 241, 241, 0.247);
+  background-color: rgba(247, 241, 241, 0.432);
   background-size: cover;
   background-position: center;
   z-index: 99;
@@ -114,7 +114,7 @@ img {
 }
 
 .hero__manzildiv p {
-  text-shadow: -1px -1px 0px #969396;
+  text-shadow: -1px 2px 1px #340c80;
   cursor: default;
   position: relative;
   left: 150px;
@@ -470,16 +470,16 @@ img {
     color: #fff;
   }
   .carousel-inner {
-    height: 65vh;
+    height: 55vh;
   }
   .carousel-item {
-    height: 65vh;
+    height: 55vh;
   }
   .carousel-item img {
     margin-top: 50px;
     background-position: center;
     background-size: cover;
-    height: 60vh;
+    height: 55vh;
   }
   .hero__copyright {
     display: none;
@@ -590,6 +590,11 @@ img {
 .btn-exit {
   background-color: transparent;
   border: none;
+}
+
+.footer {
+  background-color: #fff;
+  height: 100px;
 }
 
 .service {
