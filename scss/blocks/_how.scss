@@ -11,7 +11,6 @@
 }
 
 .how__desc {
-    text-align: center;
     padding: 100px 10px;
 }
 
@@ -29,5 +28,20 @@
     font-weight: 400;
     span {
         font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .how__desc {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .how__desc {
+        text-align: center;
+    }
+    .how__main {
+        padding: 0;
     }
 }

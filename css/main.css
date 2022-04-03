@@ -51,8 +51,8 @@ img {
 
 /* CONTAINER */
 .container {
-  width: 100%;
   max-width: 1200px;
+  width: 100%;
   padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
@@ -111,14 +111,20 @@ img {
   position: absolute;
   font-family: "Oswald", sans-serif;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .hero__manzildiv p {
   text-shadow: -1px 2px 1px #340c80;
   cursor: default;
-  position: relative;
-  left: 150px;
   font-size: 30px;
+  text-align: right;
 }
 
 .hero__manzildiv .hero__call {
@@ -302,9 +308,6 @@ img {
     max-width: 720px;
   }
   .hero__manzildiv {
-    text-align: center;
-    top: 100px;
-    right: 64px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -377,6 +380,9 @@ img {
     background-size: cover;
     height: 60vh;
   }
+  .hero__manzildiv p {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -420,7 +426,10 @@ img {
     display: -ms-flexbox;
     display: flex;
     margin: 20px auto;
-    gap: 20px;
+    gap: 10px;
+  }
+  .hero__socials .hero__socials-item i {
+    padding: 10px;
   }
   .hero__btn {
     display: block;
@@ -523,6 +532,10 @@ img {
           box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
+.hero__hover .hero__manzildiv .hero__call {
+  font-size: 25px;
+}
+
 .about__main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -594,7 +607,6 @@ img {
 
 .footer {
   background-color: #fff;
-  height: 100px;
 }
 
 .service {
@@ -734,7 +746,6 @@ img {
 }
 
 .how__desc {
-  text-align: center;
   padding: 100px 10px;
 }
 
@@ -754,6 +765,21 @@ img {
 
 .how__title span {
   font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .how__desc {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .how__desc {
+    text-align: center;
+  }
+  .how__main {
+    padding: 0;
+  }
 }
 
 .clients {
