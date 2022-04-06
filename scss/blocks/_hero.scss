@@ -31,11 +31,13 @@
 .carousel-control-prev-icon {
     width: 3rem !important;
     height: 7rem !important;
+    z-index: 999;
 }
 
 .carousel-control-next-icon {
     width: 3rem !important;
     height: 5rem !important;
+    z-index: 999;
 }
 
 .hero {
@@ -61,7 +63,7 @@
         text-decoration: none;
         color: #fff;
         transition: all ease 0.5s;
-        font-size: 40px;
+        font-size: 40px !important;
         animation: ochibYon 4s infinite 1s linear;
         text-shadow: -1px -1px 0px rgb(253, 253, 253);
         @keyframes ochibYon {
@@ -235,6 +237,7 @@
             text-shadow: 0 0 10px #FFFFFF;
             font-size: 15px;
             .logo__personal {
+                border-radius: 10px;
                 padding: 0 15px;
                 color: #FFFFFF;
                 background: #FFFFFF;
@@ -281,21 +284,33 @@
         }
     }
     .hero__manzildiv {
+        width: 55%;
         p {
             text-align: center;
+        }
+        .hero__call {
+            font-size: 20px !important;
         }
     }
 }
 
 @media screen and (max-width: 576px) {
+    .header__offcan {
+        background-color: rgba(255, 255, 255, 0.808);
+        h5 {
+            margin: 0;
+        }
+    }
     .container {
         max-width: 540px;
     }
     .hero__title {
+        text-align: center;
         color: #FFFFFF;
         text-shadow: 0 0 10px #FFFFFF;
         font-size: 15px;
         .logo__personal {
+            border-radius: 10px;
             padding: 0 15px;
             color: #FFFFFF;
             background: #FFFFFF;
@@ -321,6 +336,11 @@
                 font-weight: 700;
             }
         }
+    }
+    .hero__item_off {
+        transform: translateX(-15px);
+        text-align: center;
+        border: solid 1px rgb(255, 254, 254);
     }
     .hero__socials {
         position: relative;

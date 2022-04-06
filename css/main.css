@@ -93,11 +93,13 @@ img {
 .carousel-control-prev-icon {
   width: 3rem !important;
   height: 7rem !important;
+  z-index: 999;
 }
 
 .carousel-control-next-icon {
   width: 3rem !important;
   height: 5rem !important;
+  z-index: 999;
 }
 
 .hero {
@@ -132,7 +134,7 @@ img {
   color: #fff;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
-  font-size: 40px;
+  font-size: 40px !important;
   -webkit-animation: ochibYon 4s infinite 1s linear;
           animation: ochibYon 4s infinite 1s linear;
   text-shadow: -1px -1px 0px #fdfdfd;
@@ -339,6 +341,7 @@ img {
     font-size: 15px;
   }
   .hero__navbar .hero__title .logo__personal {
+    border-radius: 10px;
     padding: 0 15px;
     color: #FFFFFF;
     background: #FFFFFF;
@@ -380,21 +383,35 @@ img {
     background-size: cover;
     height: 60vh;
   }
+  .hero__manzildiv {
+    width: 55%;
+  }
   .hero__manzildiv p {
     text-align: center;
+  }
+  .hero__manzildiv .hero__call {
+    font-size: 20px !important;
   }
 }
 
 @media screen and (max-width: 576px) {
+  .header__offcan {
+    background-color: rgba(255, 255, 255, 0.808);
+  }
+  .header__offcan h5 {
+    margin: 0;
+  }
   .container {
     max-width: 540px;
   }
   .hero__title {
+    text-align: center;
     color: #FFFFFF;
     text-shadow: 0 0 10px #FFFFFF;
     font-size: 15px;
   }
   .hero__title .logo__personal {
+    border-radius: 10px;
     padding: 0 15px;
     color: #FFFFFF;
     background: #FFFFFF;
@@ -419,6 +436,12 @@ img {
   .hero__navbar .hero__title .hero__span {
     color: #f35959;
     font-weight: 700;
+  }
+  .hero__item_off {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+    text-align: center;
+    border: solid 1px #fffefe;
   }
   .hero__socials {
     position: relative;
