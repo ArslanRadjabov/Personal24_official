@@ -18,7 +18,7 @@
         max-width: 100vw;
         width: 100%;
         height: 100vh;
-        background-color: rgba(247, 241, 241, 0.432);
+        background-color: rgba(63, 62, 62, 0.356);
         background-size: cover;
         background-position: center;
         z-index: 99;
@@ -29,14 +29,14 @@
 }
 
 .carousel-control-prev-icon {
-    width: 3rem !important;
-    height: 7rem !important;
+    width: 2rem !important;
+    height: 2rem !important;
     z-index: 999;
 }
 
 .carousel-control-next-icon {
-    width: 3rem !important;
-    height: 5rem !important;
+    width: 2rem !important;
+    height: 2rem !important;
     z-index: 999;
 }
 
@@ -296,7 +296,6 @@
 
 @media screen and (max-width: 576px) {
     .header__offcan {
-        background-color: rgba(255, 255, 255, 0.808);
         h5 {
             margin: 0;
         }
@@ -340,7 +339,8 @@
     .hero__item_off {
         transform: translateX(-15px);
         text-align: center;
-        border: solid 1px rgb(255, 254, 254);
+        font-size: 15px;
+        font-family: $font-quicksand;
     }
     .hero__socials {
         position: relative;
