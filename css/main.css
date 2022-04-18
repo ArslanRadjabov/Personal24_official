@@ -970,6 +970,10 @@ img {
   background: rgba(3, 3, 63, 0.993);
 }
 
+.yuklash__text {
+  padding: 10px;
+}
+
 @media screen and (max-width: 756px) {
   .wrap {
     -webkit-box-orient: vertical !important;
