@@ -1007,6 +1007,12 @@ img {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
+  .qurilish td {
+    font-size: 12px;
+  }
+  .tozalash__text {
+    font-size: 12px;
+  }
 }
 
 .how {
