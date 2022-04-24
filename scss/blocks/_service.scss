@@ -98,7 +98,7 @@
     // height: 100%;
     padding: 0;
     margin: 0;
-    background: linear-gradient(11deg, rgba(3, 3, 63, 0.993) 29%, rgb(34, 2, 117) 81%);
+    background: rgb(18, 21, 175);
     display: flex;
     flex-direction: column;
 }
@@ -153,9 +153,11 @@
 }
 
 .card .text {
+    border-radius: 10px;
     position: absolute;
     left: -200%;
     bottom: 10px;
+    // height: 80%;
     width: 80%;
     font-size: 15px;
     transform: translateX(-50%);
@@ -195,9 +197,9 @@
     height: 10vh;
     font-size: 20px;
     color: #fff;
-    padding: 10px;
+    padding: 15px;
     margin: 0;
-    background-color: rgb(16, 3, 65);
+    background-color: rgb(4, 4, 99);
 }
 
 .second-wrap {

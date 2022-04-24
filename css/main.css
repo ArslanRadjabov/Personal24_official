@@ -1,6 +1,7 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;600;700&display=swap");
 /* GENERAL */
 html {
   -webkit-box-sizing: border-box;
@@ -28,7 +29,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "Arial", sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: #fff;
 }
 
@@ -72,6 +73,8 @@ img {
 }
 
 .carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100vw;
   height: 100vh;
 }
@@ -138,49 +141,12 @@ img {
   -webkit-animation: ochibYon 4s infinite 1s linear;
           animation: ochibYon 4s infinite 1s linear;
   text-shadow: -1px -1px 0px #fdfdfd;
-}
-
-@-webkit-keyframes ochibYon {
-  0% {
-    color: #0771aa;
-    text-shadow: -1px -1px 0px #fdfdfd;
-  }
-  50% {
-    color: #2b0692;
-    text-shadow: -1px -1px 5px #fdfdfd;
-  }
-  80% {
-    color: #4e14aa;
-    text-shadow: -1px -1px 1px #fdfdfd;
-  }
-  100% {
-    color: #0771aa;
-    text-shadow: -1px -1px 1px #fdfdfd;
-  }
-}
-
-@keyframes ochibYon {
-  0% {
-    color: #0771aa;
-    text-shadow: -1px -1px 0px #fdfdfd;
-  }
-  50% {
-    color: #2b0692;
-    text-shadow: -1px -1px 5px #fdfdfd;
-  }
-  80% {
-    color: #4e14aa;
-    text-shadow: -1px -1px 1px #fdfdfd;
-  }
-  100% {
-    color: #0771aa;
-    text-shadow: -1px -1px 1px #fdfdfd;
-  }
+  overflow: hidden;
 }
 
 .hero__manzildiv .hero__call:hover {
-  color: #0182CA;
-  text-shadow: -1px -1px 0px #fdfdfd;
+  color: #079e0f;
+  text-shadow: 1px -1px 0px #fdfdfd;
 }
 
 .hero__socials {
@@ -272,11 +238,12 @@ img {
 
 .hero__navbar .hero__list .hero__item {
   text-decoration: none;
-  font-size: 25px;
-  margin-right: 40px;
+  font-size: 20px;
+  margin-right: 20px;
 }
 
 .hero__navbar .hero__list .hero__item a {
+  font-family: "Raleway", sans-serif;
   text-decoration: none;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
@@ -291,7 +258,7 @@ img {
 .hero__title {
   font-size: 25px;
   font-weight: 700;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
 }
 
@@ -535,7 +502,7 @@ img {
 
 .hero__hover .hero__Hover-links {
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 1px;
   color: #000;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -548,13 +515,13 @@ img {
           flex-direction: column;
   gap: 20px;
   padding: 30px 20px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.904);
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.hero__hover .hero__manzildiv .hero__call {
-  font-size: 25px;
+.hero__hover .hero__Hover-links a {
+  text-transform: capitalize;
 }
 
 .about__main {
@@ -627,11 +594,11 @@ img {
 }
 
 .footer {
-  background-color: #2c84e9;
+  background-color: #074fa1;
 }
 
 .footer__main {
-  padding: 50px 0;
+  padding: 30px 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -844,7 +811,7 @@ img {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: linear-gradient(11deg, rgba(3, 3, 63, 0.993) 29%, #220275 81%);
+  background: #1215af;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -911,6 +878,7 @@ img {
 }
 
 .card .text {
+  border-radius: 10px;
   position: absolute;
   left: -200%;
   bottom: 10px;
@@ -956,9 +924,9 @@ img {
   height: 10vh;
   font-size: 20px;
   color: #fff;
-  padding: 10px;
+  padding: 15px;
   margin: 0;
-  background-color: #100341;
+  background-color: #040463;
 }
 
 .second-wrap {
@@ -1070,7 +1038,7 @@ img {
 
 .clients {
   padding: 50px 0;
-  background-color: #77b46f;
+  background-color: #1215af;
 }
 
 .clients__main {
@@ -1088,6 +1056,7 @@ img {
   width: 100%;
   max-width: 750px;
   margin: 0 auto;
+  color: #fff;
 }
 
 .clients__people {
@@ -1103,6 +1072,10 @@ img {
 
 .clients__people .people__item {
   margin-top: 40px;
+}
+
+.names__ofclieant {
+  color: #fff;
 }
 
 .people__about {
