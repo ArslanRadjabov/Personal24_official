@@ -1,10 +1,40 @@
+.section__service {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url('../../images/wall.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.section__service::after {
+    content: '';
+    background-color: rgba(32, 9, 97, 0.295);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wrap {
+    display: flex;
+    width: 80vw;
+    margin: auto auto;
+}
+
 .service {
+    z-index: 99;
     padding: 50px 0;
     background-color: rgb(248, 252, 252);
     text-align: center;
     align-items: center;
     justify-content: center;
     .service__title {
+        z-index: 99;
         font-family: $font-quicksand;
         font-weight: 400;
         text-transform: uppercase;
@@ -14,102 +44,10 @@
             font-weight: 700;
         }
     }
-    .service__list {
-        flex-wrap: wrap;
-        list-style: none;
-        padding: 50px 0;
-        justify-content: center;
-        align-items: center;
-    }
-    .service__item {
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-        border: 2px solid #0182CA;
-        border-radius: 10px;
-        max-width: 300px;
-        width: 100%;
-        height: 400px;
-        margin: 10px;
-        background-color: #fff;
-        padding: 20px;
-        transition: all ease 0.2s;
-        // border-top: 2px solid rgb(204, 38, 38);
-        &:hover {
-            box-shadow: -1px 7px 19px 1px rgba(2, 2, 2, 0.2);
-            transform: translateY(-10px);
-        }
-        img {
-            border-radius: 5%;
-            width: 250px;
-            height: 220px;
-        }
-        h4 {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-family: $font-quicksand;
-            font-weight: 700;
-        }
-        text-decoration: none;
-        color: $color-primary;
-    }
-    .service__item:nth-child(2) {
-        img {
-            height: 170px;
-            margin: 30px auto;
-        }
-    }
-}
-
-.more-info {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #fff;
-    text-decoration: none;
-    color: rgb(170, 169, 169);
-    border: 1px solid transparent;
-    transition: all ease 1s;
-    .bx {
-        position: relative;
-        top: 2px;
-    }
-    &:hover {
-        border-radius: 10px;
-        border: 1px solid #0182CA;
-        .bx {
-            transition: all ease 1s;
-            transform: translateX(10px);
-        }
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .service__list {
-        flex-direction: column;
-        justify-content: center;
-    }
-    .service__item {
-        max-width: 400px;
-        margin: 0 auto;
-        margin-bottom: 20px;
-    }
-}
-
-.section__service {
-    width: 100%;
-    // height: 100%;
-    padding: 0;
-    margin: 0;
-    background: rgb(18, 21, 175);
-    display: flex;
-    flex-direction: column;
-}
-
-.wrap {
-    display: flex;
-    width: 80vw;
-    margin: auto auto;
 }
 
 .card {
+    z-index: 99;
     flex: 1;
     height: 60vh;
     overflow: hidden;
@@ -145,6 +83,7 @@
 }
 
 .card:hover {
+    z-index: 99;
     flex: 4;
 }
 
@@ -153,6 +92,7 @@
 }
 
 .card .text {
+    z-index: 99;
     border-radius: 10px;
     position: absolute;
     left: -200%;
@@ -178,11 +118,13 @@
 }
 
 .title__of-cards {
+    z-index: 99;
     color: #fff;
     margin: 30px auto;
 }
 
 .text__of-card {
+    z-index: 99;
     text-align: center;
     margin: 20px auto;
     width: 70%;
@@ -193,7 +135,7 @@
     z-index: 999;
     text-align: center;
     align-items: center;
-    height: 10vh;
+    height: 13vh;
     font-size: 20px;
     color: #fff;
     padding: 15px;
@@ -211,6 +153,7 @@
 }
 
 .yuklash__text {
+    z-index: 99;
     padding: 10px;
 }
 
@@ -229,7 +172,19 @@
     }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 576px) {
+    .service__list {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .service__item {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
     .wrap {
         flex-direction: column !important;
     }
