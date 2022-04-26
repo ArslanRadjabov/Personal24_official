@@ -33,6 +33,28 @@ body {
   background-color: #fff;
 }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #032dab #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #032dab;
+  border-radius: 10px;
+  border: 3px none #ffffff;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -114,7 +136,7 @@ img {
   right: 100px;
   z-index: 99;
   position: absolute;
-  font-family: "Oswald", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,7 +428,10 @@ img {
             transform: translateX(-15px);
     text-align: center;
     font-size: 15px;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Raleway", sans-serif;
+  }
+  .hero__item_off a {
+    font-family: "Raleway", sans-serif !important;
   }
   .hero__socials {
     position: relative;
@@ -1000,7 +1025,12 @@ img {
 }
 
 .how__desc {
+  font-family: "Raleway", sans-serif;
   padding: 100px 10px;
+}
+
+.how__desc p {
+  text-align: center;
 }
 
 .how__we-work {
@@ -1015,6 +1045,7 @@ img {
   width: 100%;
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
+  text-align: center;
 }
 
 .how__title span {
@@ -1038,7 +1069,20 @@ img {
 
 .clients {
   padding: 50px 0;
-  background-color: #1215af;
+  background-image: url("https://images.pexels.com/photos/8112148/pexels-photo-8112148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+.clients::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.432);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .clients__main {
@@ -1051,15 +1095,18 @@ img {
 }
 
 .clients__text {
+  z-index: 999;
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
   width: 100%;
   max-width: 750px;
   margin: 0 auto;
   color: #fff;
+  text-shadow: -1px -1px 1px #989696;
 }
 
 .clients__people {
+  z-index: 11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1076,6 +1123,10 @@ img {
 
 .names__ofclieant {
   color: #fff;
+}
+
+.people__item {
+  z-index: 999;
 }
 
 .people__about {

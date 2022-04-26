@@ -50,7 +50,7 @@
     right: 100px;
     z-index: 99;
     position: absolute;
-    font-family: $font-oswald;
+    font-family: $font-raleway;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -325,7 +325,12 @@
         transform: translateX(-15px);
         text-align: center;
         font-size: 15px;
-        font-family: $font-quicksand;
+        font-family: $font-raleway;
+    }
+    .hero__item_off {
+        a {
+            font-family: $font-raleway !important;
+        }
     }
     .hero__socials {
         position: relative;

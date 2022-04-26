@@ -11,7 +11,11 @@
 }
 
 .how__desc {
+    font-family: $font-raleway;
     padding: 100px 10px;
+    p {
+        text-align: center;
+    }
 }
 
 .how__we-work {
@@ -26,6 +30,7 @@
     width: 100%;
     font-family: $font-quicksand;
     font-weight: 400;
+    text-align: center;
     span {
         font-weight: 700;
     }
