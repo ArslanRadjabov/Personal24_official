@@ -14,6 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="shortcut icon" href="./images/logo.svg" type="x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFYT113JKE"></script>
@@ -34,11 +35,12 @@
     <section class="hero">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
+               
                 <div class="carousel-item active">
-                    <img src="images/personal24main.jpg" class=" fill-cover d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
                     <img src="images/mebelyuklash.jpg" class=" fill-cover d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item ">
+                    <img src="images/personal24main.jpg" class=" fill-cover d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item ">
                     <img src="images/service/tinified/uytozlashga.jpg" alt="...">
@@ -506,7 +508,6 @@
 
 
 
-
     <script>
         ScrollReveal({
             reset: true,
@@ -548,6 +549,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          var but = document.getElementById("but");
+          var video = document.getElementById("vid");
+          var mediaDevices = navigator.mediaDevices;
+          vid.muted = true;
+          but.addEventListener("click", () => {
+    
+            // Accessing the user camera and video.
+            mediaDevices
+              .getUserMedia({
+                video: true,
+                audio: true,
+              })
+              .then((stream) => {
+    
+                // Changing the source of video to current stream.
+                video.srcObject = stream;
+                video.addEventListener("loadedmetadata", () => {
+                  video.play();
+                });
+              })
+              .catch(alert);
+          });
+        });
+      </script>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c6eb2d7b-ebcc-43cb-9cce-23e4cb954838";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </body>
 
 </html>
